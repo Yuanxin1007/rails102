@@ -28,7 +28,12 @@ def update
  redirect_to groups_path, notice: "Updated Success！"
  end
 
-
+ def destroy
+  @group = Group.find(params[:id])
+  @group.destroy
+  flash[:alert] = "Group deleted!"
+  redirect_to groups_path, alert: "Group Deleted！"
+  end
 
 private
 
