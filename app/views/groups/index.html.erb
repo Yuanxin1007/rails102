@@ -10,6 +10,7 @@
 <td> Title </td>
 <td> Description </td>
 <td> Created Time </td>
+<td> Creator </td>
 </tr>
     </thead>
     <tbody>
@@ -19,6 +20,8 @@
 <td> <%= link_to(group.title, group_path(group)) %> </td>
 <td> <%= group.description %> </td>
 <td> <%= group.created_at %> </td>
+<td> <%= group.user.email %> </td>
+
 <td> <%= link_to("Edit", edit_group_path(group), class: "btn btn-sm btn-default")%>
      <%= link_to("Delete", group_path(group), class: "btn btn-sm btn-default",
         method: :delete, data: { confirm: "Are you sure?"})%>
