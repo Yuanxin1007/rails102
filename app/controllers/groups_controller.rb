@@ -32,7 +32,7 @@ def update
  redirect_to groups_path, notice: "Updated Success！"
 else
   render :edit
-  end 
+  end
  end
 
  def destroy
