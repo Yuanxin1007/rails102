@@ -17,7 +17,7 @@ def join!(group)
 end
 
 def quit!(group)
-p     articipated_groups.delete(group)
+      participated_groups.delete(group)
 end
 
 
