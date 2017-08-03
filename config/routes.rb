@@ -9,4 +9,10 @@ resources :groups do
   end
 resources :posts
 end
+
+namespace :account do
+  resources :groups
+end
+
+
 end
